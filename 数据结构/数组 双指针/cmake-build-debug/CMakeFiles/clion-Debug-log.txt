@@ -1,1 +1,0 @@
-"D:\CLion 2025.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/CLion 2025.1/bin/ninja/win/x64/ninja.exe" -G Ninja -S "C:\Users\20627\Desktop\CODE\C++\数据结构\数组 双指针" -B "C:\Users\20627\Desktop\CODE\C++\数据结构\数组 双指针\cmake-build-debug"
