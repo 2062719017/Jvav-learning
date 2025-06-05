@@ -1,0 +1,21 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		String str1 = "ABCD";
+		String str2 = "";// 空串
+		String str3 = null;
+		System.out.println("ABCD\"");//  \转义
+		 //1_000_000==1000000(加下划线)
+		/**
+		 * int v1=1_000_000
+		 * int v2=0xFF_EC_DE_5E
+		 * int v3=0b11010010_00000000_00000000_11111111
+		 * double
+		 * long
+		 */
+		int age=10;
+		System.out.println(age);
+	}
+
+}

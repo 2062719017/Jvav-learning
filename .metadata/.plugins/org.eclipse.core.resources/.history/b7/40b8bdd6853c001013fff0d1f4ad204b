@@ -1,0 +1,99 @@
+public class Main {
+
+	
+	public static boolean GetBoolean() {
+		System.out.println("GetBoolean");
+		return true;
+	}
+	
+	public static void main(String[] args) {
+		String str1 = "ABCD";
+		String str2 = "";// 空串
+		String str3 = null;
+		//char为两个字节（有别于C++一字节）
+		System.out.println("ABCD\"");//  \转义
+		 //1_000_000==1000000(可加下划线增加阅读性)
+		/**
+		 * int v1=1_000_000
+		 * int v2=0xFF_EC_DE_5E
+		 * int v3=0b11010010_00000000_00000000_11111111
+		 * double
+		 * long
+		 */
+		//alt +shift +x +j运行
+		int b1=10;
+		System.out.println(b1);//syso enter
+		
+		/**
+		 *  >>>  -
+		 */
+		int age=10+8;
+		System.out.println(age);
+		String name ="Qwist_zz";
+		double height=1.74;
+		System.out.println("My name is "+name+",age is "+age+",heght is "+height);
+		//+号拼接
+		
+		//位运算
+		/**
+		 * 位运算符号>>  >>>
+		 * >>	有符号     符号补齐
+		 * >>>  无符号     0补齐
+		 * -128 =11111111_11111111_11111111_10000000
+		 * 
+		 */
+		System.out.println(Integer.toBinaryString(-128));
+		System.out.println(-128>>2);//-32
+		System.out.println(-128>>>2);//1073741792
+		System.out.println(128>>2);//32
+		System.out.println(128>>>2);//32
+		
+		//必须为bool类型
+		boolean flag1=true;
+		boolean flag2=false;
+		//&  |  ^  
+		System.out.println(flag1&flag2);
+		System.out.println(flag1|flag2);
+		System.out.println(flag1^flag2); 
+		
+		/**              
+		 * 对比&& || 少了 短路功能
+		 */
+		System.out.println("-----------------");
+		boolean res1=false && GetBoolean();
+		System.out.println(res1);//不会调用函数
+		System.out.println("-----------------------------------");
+		
+		/**
+		 * 1.拓宽基本类型转换:
+		 * 小范围转大范围 
+		 * 
+		 * 2.窄化基本类型转换:
+		 * 大转小 会丢精度/范围 需要强制类型转换 char c=(byte)
+		 * 注：char转byte short也算
+		 * 
+		 * 3.一元数字提升:
+		 * btye char short 的一元数字转为 int （自动的）
+		 */
+		//b1+b2 +是二元运算符 b1++ ++是一元运算符
+		int[] array={11,22,33,44};
+		byte index=3;
+		array[index]=20;//index自动转换为了int
+		
+		char c=65;
+		System.out.println(c);
+		System.out.println(+c);
+		
+		int[] arr1;
+		int[] arr2= {};
+		int arr3[]= {};
+		
+		int[] arr4=new int[4];
+		arr4[1]=arr4[2]=arr4[3]=arr4[0]=0;
+		int[] arr5=new int[] {1,2,3,4,5,6,7,8,9,0};
+		System.out.println(arr5);
+		
+		//字符数组!=字符串
+		
+	}
+}

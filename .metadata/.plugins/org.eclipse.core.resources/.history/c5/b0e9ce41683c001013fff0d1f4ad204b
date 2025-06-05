@@ -1,0 +1,13 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		String str1 = "ABCD";
+		String str2 = "";// 空串
+		String str3 = null;
+		System.out.println("-------str1-------");
+		System.out.println("-------str2-------");
+		System.out.println("-------str3-------");
+	}
+
+}
